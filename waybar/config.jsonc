@@ -35,6 +35,7 @@
     "modules-right": [
         "battery",
         "temperature",
+        "custom/gputemp",
         "network",
         "backlight",
         "wireplumber",
@@ -49,12 +50,20 @@
 
    "custom/rofi": {
         /*"format": "󰣇",*/
-        "format": " ",
+        "format": "",
         "tooltip": false,
         //"on-click-right": "nwg-drawer",
         "on-click": "sleep 0.1 && bash $HOME/.config/rofi/launchers/type-3/launcher.sh",
         //"on-click-middle": "pkill -9 wofi"
     },
+    
+    "custom/gputemp": {
+	    "exec": "nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits",
+	    "interval": 5,  
+	    "return-type": "string",
+	    "format": "󰢮 {} ℃",
+	    "tooltip": true,
+	},
 
     "battery": {
         "interval": 2,
@@ -103,6 +112,7 @@
         "min-length": 7,
         "on-click": "xsensors"
     },
+    
 
     "memory": {
         "interval": 30,
