@@ -13,19 +13,20 @@
 /* Reset all styles */
 * {
     border: none;
-    border-radius: 3px 3px 3px 3px;
-    min-height: 0;
-    margin: 0.2em 0.3em 0.2em 0.3em;
+    min-height: 0px;
+    margin: 0em 0.3em 0em 0.3em;
+}
+window#waybar {
+    padding: 0;
+    margin: 0;
 }
 
 /* The whole bar */
 #waybar {
-    background-color: rgba(40, 40, 40, 1);
-    color: #a89984;
+    background-color: rgba(40, 40, 40, 0);
+    /* color: #a89984;*/
     transition-property: background-color;
     transition-duration: 0.5s;
-    border-top: 3px transparent;
-    border-radius: 3px;
     margin: 0px 0px;
 }
 
@@ -62,7 +63,7 @@ window#waybar.hidden {
     /* border-radius: 20px; */
     /* padding-left: 10px; */
     /* padding-right: 10px; */
-    color: #b8bb26;
+    /*color: #b8bb26;*/
 }
 
 /* Each module */
@@ -97,18 +98,18 @@ window#waybar.hidden {
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
 #custom-weather.default,
-#custom-gputemp
-#custom-rofi,
+#custom-gputemp #custom-rofi #custom-lizzy,
 #custom-notification {
     padding: 0px 15px;
     color: #d79921;
-    border-radius: 5px;
+    border-radius: 0px 0px 15px 15px;
     background-color: #3c3836;
+    min-height: 30px;
 }
 
 #window,
 #workspaces {
-    border-radius: 20px;
+    border-radius: 0px 0px 15px 15px;
     padding: 0px 10px;
     background-color: #3c3836;
 }
@@ -128,15 +129,26 @@ window#waybar.hidden {
     background-color: #3c3836;
     color: #fb4934;
 }
+#custom-lizzy {
+    padding: 0px 15px;
+    color: #ebdbb2;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #3c3836;
+    min-height: 30px;
+}
 
 #custom-rofi {
-    background-color: rgba(20, 27, 30, 0);
+    border-radius: 0px 0px 15px 15px;
+    background-color: #3c3836;
     color: #83a598;
     font-size: 15px;
+    padding-right: 15;
+    padding-left: 10;
+    margin: 0em 0.3em;
     background-image: url("/home/cjg/Pictures/wayland-icon.png");
-    background-size: 30px 30px;
+    background-size: 30px;
+    background-position: 50% 50%; /* Precise center positioning */
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 tooltip,
@@ -263,7 +275,8 @@ label:focus {
 #custom-storage {
     background-color: #3c3836;
     color: #ebdbb2;
-    padding: 10px 10px;
+    padding: 0px 10px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 #custom-pacman {
@@ -271,6 +284,7 @@ label:focus {
     color: #ebdbb2;
     padding-left: 10px;
     padding-right: 8px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 #custom-gputemp {
@@ -278,6 +292,7 @@ label:focus {
     color: #ebdbb2;
     padding-left: 10px;
     padding-right: 8px;
+    border-radius: 0px 0px 15px 15px;
 }
 
 #bluetooth {
@@ -395,12 +410,14 @@ label:focus {
     padding-right: 15px;
 }
 
-window#waybar .horizontal {
+/* window#waybar .horizontal {
     padding: 1px;
-}
+} */
 window#waybar {
-    border-radius: 10px;
-    border: 2px solid #a89984;
+    /* border-radius: 10px; */
+    /*: 2px solid #a89984;*/
+    /*background-color: #3C3836;*/
+    min-height: 30px;
 }
 #custom-thunar {
     /*background-color: #3C3836;*/
