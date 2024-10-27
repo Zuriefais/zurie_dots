@@ -1,0 +1,7 @@
+[default]
+duration = "15m"
+mode = "center"
+sorting = "ascending"
+
+[any]
+path = "/home/zuriefais/Pictures/Wallpapers"
