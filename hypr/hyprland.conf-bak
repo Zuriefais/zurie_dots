@@ -88,7 +88,7 @@ env = HYPRCURSOR_SIZE,24
 
 # https://wiki.hyprland.org/Configuring/Variables/#general
 render {
-    explicit_sync = 2
+	explicit_sync = 1
 }
 
 general {
@@ -119,10 +119,10 @@ decoration {
     active_opacity = 1.0
     inactive_opacity = 1.0
 
-    #drop_shadow = true
-    #shadow_range = 4
-    #shadow_render_power = 3
-    #col.shadow = rgba(1a1a1aee)
+    drop_shadow = true
+    shadow_range = 4
+    shadow_render_power = 3
+    col.shadow = rgba(1a1a1aee)
     # https://wiki.hyprland.org/Configuring/Variables/#blur
     blur {
         enabled = true
@@ -315,8 +315,3 @@ bindm = $mainMod, mouse:273, resizewindow
 windowrulev2 = workspace[2],class:^(ArmCord)$
 
 windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
-
-cursor {
-    sync_gsettings_theme = true
-    no_hardware_cursors = true
-}

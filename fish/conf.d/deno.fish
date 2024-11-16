@@ -1,0 +1,1 @@
+source "/home/zuriefais/.deno/env.fish"
