@@ -56,7 +56,7 @@
     "format": "",
     "tooltip": false,
     //"on-click-right": "nwg-drawer",
-    "on-click": "sleep 0.1 && bash $HOME/.config/rofi/launchers/type-3/launcher.sh",
+    "on-click": "hyprctl dispatch overview:toggle",
     //"on-click-middle": "pkill -9 wofi"
   },
 
@@ -72,7 +72,7 @@
     "interval": 30,
     /* "format": "  {used:0.2f} / {total:0.0f} GB",*/
     "format": "<span foreground='#B8BB26'> </span> {used}GB",
-    "on-click": "kitty -e btop",
+    "on-click": "ghostty -e btop",
   },
 
   "network": {

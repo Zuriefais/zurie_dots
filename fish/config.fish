@@ -19,3 +19,7 @@ end
 
 # Created by `pipx` on 2024-08-29 16:28:28
 set PATH $PATH /home/zuriefais/.local/bin
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

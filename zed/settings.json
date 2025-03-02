@@ -7,7 +7,12 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "icon_theme": "Colored Zed Icons Theme Dark",
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "assistant": {
+    "dock": "left",
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-5-sonnet-latest"
@@ -16,7 +21,7 @@
   },
   "theme": "Gruvbox Dark",
   "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "buffer_font_size": 15.0,
   "autosave": "on_focus_change",
   "buffer_font_family": "FiraCode Nerd Font",
   "buffer_font_features": {

@@ -1,0 +1,8 @@
+width = 600
+height = 600
+font_size = 14
+
+[theme]
+background_color = "#0f0f0f"
+text_color = "#eceff4"
+selection_color = "#1f1f1f"
